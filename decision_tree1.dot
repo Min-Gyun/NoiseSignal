@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="MACD <= -14.695\nsamples = 2436\nvalue = [811, 1133, 492]\nclass = NEUTRAL", fillcolor="#39e58133"] ;
+1 [label="MACD <= -100.465\nsamples = 424\nvalue = [109, 139, 176]\nclass = UP", fillcolor="#8139e521"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="SN <= -0.085\nsamples = 26\nvalue = [2, 0, 24]\nclass = UP", fillcolor="#8139e5ea"] ;
+1 -> 2 ;
+3 [label="samples = 23\nvalue = [0, 0, 23]\nclass = UP", fillcolor="#8139e5ff"] ;
+2 -> 3 ;
+4 [label="samples = 3\nvalue = [2, 0, 1]\nclass = DOWN", fillcolor="#e581397f"] ;
+2 -> 4 ;
+5 [label="SN <= 0.168\nsamples = 398\nvalue = [107, 139, 152]\nclass = UP", fillcolor="#8139e50d"] ;
+1 -> 5 ;
+6 [label="samples = 387\nvalue = [107, 128, 152]\nclass = UP", fillcolor="#8139e518"] ;
+5 -> 6 ;
+7 [label="samples = 11\nvalue = [0, 11, 0]\nclass = NEUTRAL", fillcolor="#39e581ff"] ;
+5 -> 7 ;
+8 [label="SN <= 0.529\nsamples = 2012\nvalue = [702, 994, 316]\nclass = NEUTRAL", fillcolor="#39e58139"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="SN <= 0.177\nsamples = 1879\nvalue = [627, 959, 293]\nclass = NEUTRAL", fillcolor="#39e58144"] ;
+8 -> 9 ;
+10 [label="samples = 908\nvalue = [294, 415, 199]\nclass = NEUTRAL", fillcolor="#39e58132"] ;
+9 -> 10 ;
+11 [label="samples = 971\nvalue = [333, 544, 94]\nclass = NEUTRAL", fillcolor="#39e58154"] ;
+9 -> 11 ;
+12 [label="MACD <= 37.477\nsamples = 133\nvalue = [75, 35, 23]\nclass = DOWN", fillcolor="#e5813968"] ;
+8 -> 12 ;
+13 [label="samples = 12\nvalue = [3, 9, 0]\nclass = NEUTRAL", fillcolor="#39e581aa"] ;
+12 -> 13 ;
+14 [label="samples = 121\nvalue = [72, 26, 23]\nclass = DOWN", fillcolor="#e581397b"] ;
+12 -> 14 ;
+}
